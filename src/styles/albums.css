@@ -1,0 +1,59 @@
+.albums {
+    margin-bottom: 50px;
+}
+
+.album-brief {
+    padding: 20px;
+    position: relative;
+}
+
+.album-brief-image {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #6F8C42;
+    margin-bottom: 20px;
+}
+
+.album-brief-description {
+    text-align: center;
+}
+
+.album-brief-title {
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.album-brief-anchor {
+    display: inline-block;
+    color: white;
+    background-color: #01403A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: capitalize;
+    opacity: .9;
+    transition-duration: .5s;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 720px) {
+    .album-brief {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .album-brief-title {
+        font-size: 1.2em;
+    }
+
+    .album-brief-image {
+        margin: 0px;
+    }
+}

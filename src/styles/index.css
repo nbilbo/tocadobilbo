@@ -1,0 +1,34 @@
+/*font-family: 'Libre Baskerville', serif ;*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*font-family: 'Noto Serif Thai', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;700&display=swap');
+
+/*font-family: 'Cinzel', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+:root {
+  --color0: #011F26;
+  --color1: #01403A;
+  --color2: #6F8C42;
+  --color3: #F2B705;
+  --color4: #F29F05;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    background-color: #011F26;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0px auto;
+}

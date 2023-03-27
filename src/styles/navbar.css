@@ -1,0 +1,22 @@
+.navbar {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #01403A;
+    margin-bottom: 50px;
+}
+
+.navbar-anchor {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1em;
+}
+
+.brand {
+    font-family: 'Noto Serif Thai', serif;
+    font-weight: normal;
+    font-size: 2em;
+    color: white;
+}

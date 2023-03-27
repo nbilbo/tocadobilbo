@@ -1,0 +1,60 @@
+.album-detail {
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.album-detail-apresentation {
+    margin-bottom: 40px;
+}
+
+.album-detail-title {
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.album-detail-thumbnail {
+    display: block;
+    width: 100%;
+    border: 1px solid #01403A;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.album-image-container {
+    margin-bottom: 20px;
+}
+
+.album-image {
+    display: block;
+    width: 100%;
+}
+
+.album-image-title {
+    color: white;
+    background-color: #01403A;
+    font-size: 1em;
+    font-weight: normal; 
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    padding: 5px;
+}
+
+@media (min-width: 720px) {
+    .album-detail-apresentation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+
+    .album-detail-title {
+        margin: 0px;
+    }
+    .album-detail-title {
+        font-size: 1.2em;
+    }
+}
