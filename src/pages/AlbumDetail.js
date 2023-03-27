@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Extra from '../templates/Extra'
 import Navbar from '../templates/Navbar'
 import Footer from '../templates/Footer'
@@ -43,7 +44,10 @@ const AlbumDetail = () => {
                             album.images.map((image) => {
                                 return (
                                     <div className='album-image-container' key={ image.id }>
-                                        <img src={ image.image } alt={ image.title } className='album-image'/>
+                                        <Link to={ image.image } target='blank_'>
+                                            <img src={ image.image } alt={ image.title } className='album-image'/>
+                                        </Link>
+
                                         <div className='image-description'>
                                             <h2 className='album-image-title'>{ image.title }</h2>
                                         </div>

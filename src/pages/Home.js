@@ -48,7 +48,7 @@ const Home = () => {
                 </> }
 
                 { albums && <>
-                    <Albums albums={ albums }/>
+                    <Albums albums={ albums.slice(0, 2) }/>
                 </> }
 
             </main>
