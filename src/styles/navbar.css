@@ -11,12 +11,12 @@
     font-weight: normal;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .brand {
     font-family: 'Noto Serif Thai', serif;
     font-weight: normal;
-    font-size: 2em;
+    font-size: 20px;
     color: white;
 }
