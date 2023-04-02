@@ -28,6 +28,7 @@
 .post-detail-thumbnail {
     display: block;
     width: 100%;
+    height: 200px;
     border: 1px solid #01403A;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
