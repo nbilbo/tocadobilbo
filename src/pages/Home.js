@@ -44,11 +44,11 @@ const Home = () => {
 
 
                 { posts && <> 
-                    <Posts posts={ posts.slice(0, 2) }/> 
+                    <Posts posts={ posts.slice(0, 4) }/> 
                 </> }
 
                 { albums && <>
-                    <Albums albums={ albums.slice(0, 2) }/>
+                    <Albums albums={ albums.slice(0, 4) }/>
                 </> }
 
             </main>
