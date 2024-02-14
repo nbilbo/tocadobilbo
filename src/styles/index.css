@@ -10,6 +10,9 @@
 /*font-family: 'Cinzel', serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
+/*font-family: "Great Vibes", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 :root {
   --color0: #011F26;
   --color1: #01403A;

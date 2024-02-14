@@ -40,21 +40,24 @@ const AlbumDetail = () => {
                             <h1 className='album-detail-title'>{ album.title }</h1>
                             <img src={ album.thumbnail } className='album-detail-thumbnail' alt={album.title} />
                         </div>
+
+                        <div className="album-images-container">
                         {
                             album.images.map((image) => {
                                 return (
-                                    <div className='album-image-container' key={ image.id }>
-                                        <Link to={ image.image } target='blank_'>
-                                            <img src={ image.image } alt={ image.title } className='album-image'/>
-                                        </Link>
+                                        <div className='album-image-container' key={ image.id }>
+                                            <Link to={ image.image } target='blank_'>
+                                                <img src={ image.image } alt={ image.title } className='album-image'/>
+                                            </Link>
 
-                                        <div className='image-description'>
-                                            <h2 className='album-image-title'>{ image.title }</h2>
+                                            <div className='image-description'>
+                                                <h2 className='album-image-title'>{ image.title }</h2>
+                                            </div>
                                         </div>
-                                    </div>
                                 )
                             })
                         }
+                        </div>
                     </div>
                 </section>
             </> }
