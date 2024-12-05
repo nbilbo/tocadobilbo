@@ -29,6 +29,14 @@
     margin-bottom: 20px;
 }
 
+.album-brief-about {
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
 .album-brief-anchor {
     display: inline-block;
     color: white;
@@ -49,6 +57,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        grid-gap: 10px;
     }
 
     .album-brief-title {

@@ -12,23 +12,12 @@ const Albums = ({ albums }) => {
                                 <img src={ album.thumbnail } alt='album thumbnail' className='album-brief-image'/>
                                 <div className='album-brief-description'>
                                     <h2 className='album-brief-title'>{ album.title }</h2>
+                                    <h3 className='album-brief-about'>{ album.about }</h3>
 
                                     <Link to={`/albums/${album.slug}`} className='album-brief-anchor'>
                                         conferir album
                                     </Link>
 
-                                    {/* categories */}
-                                    <div className='album-brief-categories'>
-                                        {
-                                            album.categories.map((category) => {
-                                                return (
-                                                    <span key={ category.id } className='category'>
-                                                        { category.title } 
-                                                    </span>
-                                                )
-                                            })
-                                        }
-                                    </div>
                                 </div>
                             </div>
                         )

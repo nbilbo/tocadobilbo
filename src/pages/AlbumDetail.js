@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import Extra from '../templates/Extra'
 import Navbar from '../templates/Navbar'
 import Footer from '../templates/Footer'
 import Loading from '../templates/Loading'
@@ -15,8 +14,7 @@ const AlbumDetail = () => {
         data: album, 
         isPeding, 
         error
-    } = useFetch(process.env.REACT_APP_ALBUMS_ENDPOINT + slug)
-
+    } = useFetch(`${process.env.REACT_APP_ALBUMS_ENDPOINT}/${slug}`)
 
     return (
         <>
@@ -37,8 +35,8 @@ const AlbumDetail = () => {
                 <section className='album-detail'>
                     <div className='container album-detail-container'>
                         <div className='album-detail-apresentation'>
-                            <h1 className='album-detail-title'>{ album.title }</h1>
-                            <img src={ album.thumbnail } className='album-detail-thumbnail' alt={album.title} />
+                            <h1 className='album-detail-title'>{ album.name }</h1>
+                            <img src={ album.thumbnail } className='album-detail-thumbnail' alt="album thumbail"/>
                         </div>
 
                         <div className="album-images-container">
@@ -46,8 +44,8 @@ const AlbumDetail = () => {
                             album.images.map((image) => {
                                 return (
                                         <div className='album-image-container' key={ image.id }>
-                                            <Link to={ image.image } target='blank_'>
-                                                <img src={ image.image } alt={ image.title } className='album-image'/>
+                                            <Link to={ image.source } target='blank_'>
+                                                <img src={ image.source } className='album-image' alt="Album element"/>
                                             </Link>
 
                                             <div className='image-description'>
@@ -62,10 +60,7 @@ const AlbumDetail = () => {
                 </section>
             </> }
 
-            {!isPeding && <Extra />}
-
             {!isPeding && <Footer/>}
-
         </>
     )
 }

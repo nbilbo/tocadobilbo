@@ -1,4 +1,3 @@
-import Extra from '../templates/Extra'
 import Navbar from '../templates/Navbar'
 import Footer from '../templates/Footer'
 import Loading from '../templates/Loading'
@@ -26,14 +25,8 @@ const AlbumList = () => {
             </>}
 
             {!isPeding && <>
-                <Extra />
-            </>}
-
-            {!isPeding && <>
                 <Footer />
             </>}
-
-
         </>
     )
 }

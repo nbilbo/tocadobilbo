@@ -1,7 +1,5 @@
-import Extra from '../templates/Extra'
 import Navbar from '../templates/Navbar'
 import Footer from '../templates/Footer'
-import Posts from '../templates/Posts'
 import Albums from '../templates/Albums'
 import Loading from '../templates/Loading'
 import ErrorMessage from '../templates/ErrorMessage'
@@ -10,12 +8,6 @@ import '../styles/home.css'
 
 
 const Home = () => {
-    const {
-        data: posts, 
-        isPeding: postsIsPeding, 
-        error: postsError
-    } = useFetch(process.env.REACT_APP_POSTS_ENDPOINT)
-
     const {
         data: albums, 
         isPeding: albumsIsPeding, 
@@ -30,32 +22,26 @@ const Home = () => {
             
             {/* building main */}
             <main className='main'>
-                { postsError && albumsError && <>
-                    <ErrorMessage message={postsError | albumsError} />
+                { albumsError && <>
+                    <ErrorMessage message={albumsError} />
                 </> }
 
-                { postsIsPeding && albumsIsPeding && <>
+                { albumsIsPeding && <>
                     <Loading /> 
                 </> }
 
-                {posts && albums && <>
+                {albums && <>
                     <h1 className='main-title'>Ultimas atualizações</h1>
                 </>}
 
 
-                { posts && <> 
-                    <Posts posts={ posts.slice(0, 4) }/> 
-                </> }
-
                 { albums && <>
-                    <Albums albums={ albums.slice(0, 4) }/>
+                    <Albums albums={ albums }/>
                 </> }
 
             </main>
 
-            { !postsIsPeding && !albumsIsPeding && <Extra /> }
-
-            { !postsIsPeding && !albumsIsPeding && <Footer/> }
+            {  !albumsIsPeding && <Footer/> }
         </>
     )
 }
